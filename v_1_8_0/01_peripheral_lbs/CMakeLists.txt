@@ -5,6 +5,9 @@
 #
 cmake_minimum_required(VERSION 3.20.0)
 
+list(APPEND BOARD_ROOT ${CMAKE_CURRENT_SOURCE_DIR})
+set (OPENOCD_NRF5_SUBFAMILY "nrf52")
+
 set(PM_STATIC_YML_FILE
   ${CMAKE_CURRENT_SOURCE_DIR}/boards/pm_static_${BOARD}.yml
   )
